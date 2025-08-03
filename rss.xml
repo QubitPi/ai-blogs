@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Jiaqi&apos;s AI Blogs</title><description>The Future is a game between AI&apos;s Determinism and Human&apos;s Libertarianism</description><link>https://ai.qubitpi.org/</link><language>en</language><item><title>Machine Learning</title><link>https://ai.qubitpi.org/posts/machine-learning/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/machine-learning/</guid><description>Machine Learning is to me is the transcendentalization of my combined passion toward Software Engineering and Data
-Analytics. While Artificial Intelligence (AI) is a broad field encompassing the creation of machines that can perform
-tasks that typically require human intelligence, Machine Learning (ML) is a specific subset of AI focused on enabling
-machines to learn from data. Given that distinction, this posts is NOT about AI, but Machine Learning in general.
+Analytics. Machine Learning (ML) is a specific subset of AI focused on enabling machines to learn from data.
 </description><pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;:::kokomi[Working with Real Data]&lt;/p&gt;
 &lt;p&gt;Machine Learning is about inferencing values from data. Studying about machine learning, therefore, comes out best by
 experimenting with real-world data, not artificial datasets. Fortunately, there are thousands of open datasets to

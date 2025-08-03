@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /_astro/
 
-Sitemap: https://leadership.qubitpi.org/sitemap-index.xml
+Sitemap: https://ai.qubitpi.org/sitemap-index.xml

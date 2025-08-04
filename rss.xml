@@ -552,8 +552,11 @@ we will have 2 black boxes to do the work.&lt;/p&gt;
 examples such as &quot;cat&quot; and &quot;hello&quot;, and feed them into the boxes to train them until they can output correct vocabulary
 like &quot;cat&quot; and &quot;hello&quot;.&lt;/p&gt;
 &lt;p&gt;This is the idea behind &lt;a href=&quot;https://en.wikipedia.org/wiki/Recurrent_neural_network&quot;&gt;RNN&lt;/a&gt;. It&apos;s recurrent because the boxed
-function gets invoked repeatedly for each element of the sequence. In the case of our character-level language model,
-element is a character such as &quot;e&quot; and sequence is a string like &quot;hell&quot;&lt;/p&gt;
+function gets invoked &lt;strong&gt;repeatedly&lt;/strong&gt; for each element of the sequence. In the case of our character-level language model,
+element is a character such as &quot;e&quot; and sequence is a string like &quot;hell&quot;:&lt;/p&gt;
+&lt;p&gt;:::caution&lt;/p&gt;
+&lt;p&gt;The diagram below is not multiple functions chained together, but a single function being &lt;strong&gt;repeatedly&lt;/strong&gt; invoked&lt;/p&gt;
+&lt;p&gt;:::&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;img/rnn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Each function $f$ is a network unit containing 2 perceptrons. One perceptron computes the &quot;history&quot; like $h_1$, $h_2$,
 $h_3$.&lt;/p&gt;
@@ -1056,6 +1059,7 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;p&gt;:::note&lt;/p&gt;
 &lt;p&gt;A Python implementation of the RNN discussed in this article can be found at &lt;a href=&quot;https://github.com/QubitPi/RNN&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;::github{repo=&quot;QubitPi/RNN&quot;}&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
 &lt;h3&gt;Graph Neural Network&lt;/h3&gt;
 &lt;h2&gt;Large Language Model (LLM)&lt;/h2&gt;

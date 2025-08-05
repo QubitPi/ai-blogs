@@ -535,11 +535,11 @@ vector will have a value of 1 at the index corresponding to that character, and 
 one-hot encoded vector for &quot;e&quot;, and so on. This process allows the function to handle sequential data by processing one
 character at a time.&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
-&lt;p&gt;But one might have noticed that if the 3rd function (box) produces $f(&apos;l&apos;) = &apos;l&apos;$, then why would the 4th function
-(box), given the same input, gives a different output of &apos;o&apos;? This suggest that we should take the &lt;strong&gt;history&lt;/strong&gt; into
+&lt;p&gt;But one might have noticed that if the 3rd invocation produces $f(&apos;l&apos;) = &apos;l&apos;$, then why would the 4th one, given the
+same input, outputs a different character of &apos;o&apos;? This suggests that we should take the &lt;strong&gt;history&lt;/strong&gt; into
 account. Instead of having $f$ depend on 1 parameter, we now have it take 2 parameters.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;a character;&lt;/li&gt;
+&lt;li&gt;a character, and&lt;/li&gt;
 &lt;li&gt;a variable that summarizes the previous calculations:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;./img/rnn-4-black-boxes-connected.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;

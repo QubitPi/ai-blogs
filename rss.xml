@@ -525,6 +525,16 @@ and the model outputs a complete word &quot;hello&quot;. We call inputs like &qu
 &lt;p&gt;How do we train such model? One approach is to have &lt;strong&gt;one function invoked 4 times&lt;/strong&gt;, with each time taking a single
 character as input and calculates an output:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;./img/rnn-4-black-boxes.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;:::tip[Input for the function is actually a one-hot encoded vector representing a single character]&lt;/p&gt;
+&lt;p&gt;In our &quot;hello&quot; example above, the input sequence would be &quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;. For each of these characters, the
+input to the function is not the character itself, but a vector. This vector has a size equal to the total number of
+unique characters in our vocabulary, i.e. a vocabulary of four possible letters &quot;helo&quot;. For a specific character, the
+vector will have a value of 1 at the index corresponding to that character, and 0 everywhere else.&lt;/p&gt;
+&lt;p&gt;For example, the input for the character &quot;h&quot; would be a vector of length 4. This vector would have a value of 1 at the
+1st position (since &apos;h&apos; is the 1st letter of the alphabet) and 0s in all other 3 positions. The next input would be the
+one-hot encoded vector for &quot;e&quot;, and so on. This process allows the function to handle sequential data by processing one
+character at a time.&lt;/p&gt;
+&lt;p&gt;:::&lt;/p&gt;
 &lt;p&gt;But one might have noticed that if the 3rd function (box) produces $f(&apos;l&apos;) = &apos;l&apos;$, then why would the 4th function
 (box), given the same input, gives a different output of &apos;o&apos;? This suggest that we should take the &lt;strong&gt;history&lt;/strong&gt; into
 account. Instead of having $f$ depend on 1 parameter, we now have it take 2 parameters.&lt;/p&gt;

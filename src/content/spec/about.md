@@ -1,7 +1,15 @@
+My name is Jiaqi Liu. I graduate from U of I, had internship at Fortune 500 Grainger Inc., worked at Yahoo for 4 years.
+
+:::tip[Recommendation Letter from Grainger Inc. (Fortune 500)]
+
+![](./recommendation.png)
+
+:::
+
 Why I Believe in AI
 ===================
 
-My name is Jiaqi Liu. I graduate from U of I, had internship at Fortune 500 Grainger Inc., worked at Yahoo for 4 years.
+
 In my early career as a Software Engineer from 2016 to 2025, I had experienced what it called "Stackoverflow-oriented"
 or "Google-oriented" programming. Whenever I need to deal with a bug or check something technical real quick, I google
 that thing and pick up the top stackoverflow result. That basically was my toolbox all the time.
@@ -52,8 +60,3 @@ come__.
 future.
 
 ::github{repo="QubitPi/ai-blogs"}
-
-Recommendation Letter from My Former Internship Employer - Grainger Inc. (Fortune 500)
---------------------------------------------------------------------------------------
-
-![](./recommendation.png)

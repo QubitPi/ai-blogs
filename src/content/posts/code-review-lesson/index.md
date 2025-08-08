@@ -134,6 +134,15 @@ Different personality types can drive these software design debates as well. In 
 discussion](#how-the-lesson-started-by-accident), two conflicting personalities often emerge: the __Architect__ and the
 __Hacker__.
 
+:::caution
+
+"Architect" in this context is NOT to be confused with the "Architect" within the Myers-Briggs Type Indicator (MBTI)
+framework. The use of "Architect" and "Hacker" was intended to describe archetypes or roles in software development,
+representing distinct philosophical approaches to design, rather than strictly adhering to formal psychological
+personality typing systems like the 16-Personality scheme.
+
+:::
+
 ### The Architect 🏛️
 
 The Architect embodies the __Purism/Idealism__ and _Generality_ ideologies. This personality is deeply concerned with

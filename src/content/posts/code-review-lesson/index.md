@@ -40,7 +40,7 @@ public abstract class AbstractNode {
 }
 ```
 
-```java title="General BFS implementation"
+```java title="General BFS implementation" {"AI Review: No early return for large graph dataset":5}
 public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
     final Deque<AbstractNode> queue = new ArrayDeque<>(Collections.singleton(startNode));
     final Set<String> visited = new HashSet<>(Collections.singleton(startNode.getLabel()));
@@ -57,6 +57,10 @@ public static void traverse(final AbstractNode startNode, final NodeVisitor visi
     }
 }
 ```
+
+The Gemini AI review found a performance issue and argued that if we are applying `traverse` method to a large dataset,
+the `while` loop above could take a lot of time. So the AI figured out a way for the early termination of the loop with
+the following review comments:
 
 ![](./img/conversation-with-ai.png)
 

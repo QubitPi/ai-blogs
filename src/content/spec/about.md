@@ -34,7 +34,8 @@ I believe AI fits in one side of the two prevailing views of this world:
 
 1. [__Determinism__](https://ai.qubitpi.org/posts/determinism/): Given an initial condition, the future has all been
    _pre-determined_. No one can alter the course of the universe and the destinies of human beings. This is the doctrine
-   philosophy behind Newtonian Mechanics, General Relativity, computer systems, and AI.
+   philosophy behind Newtonian Mechanics, [General Relativity](https://relativity.qubitpi.org/), computer systems, and
+   AI.
 2. __Libertarianism__: We believe in _free-will_ and we are free to choose. The future is in our hands not because we
    are programmed to but because we choose to. This is the guiding principle of evolving human, the futurists, and the
    revolutionist of Quantum Mechanics.

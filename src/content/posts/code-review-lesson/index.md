@@ -131,7 +131,7 @@ The Two Conflicting Personalities behind the Two Software Design
 ----------------------------------------------------------------
 
 Different personality types can drive these software design debates as well. In the [context of the BFS visitor pattern
-discussion](#how-the-lesson-started-by-accident), two conflicting personalities often emerge: the __Architect__ and the
+discussion](#how-the-lesson-started-by-accident), two conflicting personalities often emerge: the __[Architect__ and the
 __Hacker__.
 
 ### The Architect 🏛️

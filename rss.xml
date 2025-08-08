@@ -1211,6 +1211,7 @@ for review:&lt;/p&gt;
 type of &lt;code&gt;NodeVisitor.visit(AbstractNode node)&lt;/code&gt; from &lt;code&gt;void&lt;/code&gt; to &lt;code&gt;boolean&lt;/code&gt;. This almost immediately triggered my opposition
 and I left my response as follows:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;./img/conversation-with-ai-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The AI is resisting with the following followup:&lt;/p&gt;
 &lt;h2&gt;The Two Conflicting Personalities behind the Two Software Design&lt;/h2&gt;
 &lt;p&gt;Different personality types can drive these software design debates. In the context of the BFS visitor pattern discussion, two conflicting personalities often emerge: the Architect and the Hacker.&lt;/p&gt;
 &lt;h2&gt;What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?&lt;/h2&gt;
@@ -1511,7 +1512,7 @@ antiquity languages:&lt;/p&gt;
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;[Greek: An Intensive Course, 2nd Revised Edition] (https://pdfcoffee.com/4-hansen-hardy-quinn-gerald-m-greek-an-intensive-course-5-pdf-free.html)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pdfcoffee.com/4-hansen-hardy-quinn-gerald-m-greek-an-intensive-course-5-pdf-free.html&quot;&gt;Greek: An Intensive Course, 2nd Revised Edition&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;img/greek-an-intensive-course.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://leitourgeia.com/greek-resources/&quot;&gt;Partial answer keys&lt;/a&gt;&lt;/li&gt;

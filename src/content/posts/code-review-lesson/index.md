@@ -21,14 +21,14 @@ The irrelevant codes, such as Javadoc, `import`s, null-checks, etc., have been r
 
 :::
 
-```java title="NodeVisitor" "void"
+```java "void"
 public interface NodeVisitor {
 
     void visit(AbstractNode node);
 }
 ```
 
-```java title="General BFS implementation"
+```java
 public class Bfs {
     
     public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {

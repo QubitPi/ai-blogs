@@ -1230,6 +1230,13 @@ however, is resisting with the following followup:&lt;/p&gt;
 balancing &lt;strong&gt;strict adherence to a pattern&apos;s principles&lt;/strong&gt; with &lt;strong&gt;real-world performance needs&lt;/strong&gt;. I keep defending the
 &lt;code&gt;void&lt;/code&gt; return in &lt;code&gt;visit&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;./img/conversation-with-ai-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The story went on...The &lt;a href=&quot;https://github.com/QubitPi/gearbox/pull/23&quot;&gt;original pull request&lt;/a&gt; had all the followup
+details and it&apos;s enough for us to transcendentalize the topic:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The AI really masters communicating &lt;em&gt;professionally&lt;/em&gt; in the tech debate, and more importantly&lt;/li&gt;
+&lt;li&gt;I started to ask: &lt;strong&gt;what are the two conflicting philosophical or psychological ideologies behind this BFS design
+debate between human and machine?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;The Two Conflicting Personalities behind the Two Software Design&lt;/h2&gt;
 &lt;p&gt;Different personality types can drive these software design debates. In the context of the BFS visitor pattern discussion, two conflicting personalities often emerge: the Architect and the Hacker.&lt;/p&gt;
 &lt;h2&gt;What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?&lt;/h2&gt;

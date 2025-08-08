@@ -21,7 +21,7 @@ The irrelevant codes, such as Javadoc, `import`s, null-checks, etc., have been r
 
 :::
 
-```java title="NodeVisitor"
+```java title="NodeVisitor" "void"
 public interface NodeVisitor {
 
     void visit(AbstractNode node);

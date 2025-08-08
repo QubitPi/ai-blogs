@@ -123,7 +123,7 @@ it's a worthwhile trade-off. The goal is to build effective software that meets 
 means adapting patterns to fit specific performance requirements. This approach values utility, performance, and solving
 immediate problems efficiently.
 
-Pragmatism possesses the viewpoint of __specific optimization__ that focuses on optimizing for a particular use case, such as finding a
+Pragmatism possesses the viewpoint of _specific optimization_ that focuses on optimizing for a particular use case, such as finding a
 target node as quickly as possible. For this specific scenario, continuing the traversal after the target is found is
 clearly inefficient. The argument is that if a common and critical use case (like searching) can be made significantly
 faster by a minor adjustment to the API, that optimization should be considered. This prioritizes the performance of a
@@ -137,6 +137,28 @@ discussion](#how-the-lesson-started-by-accident), two conflicting personalities 
 __Hacker__.
 
 ### The Architect 🏛️
+
+The Architect embodies the __Purism/Idealism__ and _Generality_ ideologies. This personality is deeply concerned with
+the long-term health, scalability, and maintainability of the codebase.
+
+For the Architect, the Visitor pattern's strength lies in its clear _separation of concerns_. The `visit` method should
+only perform an operation on the element, not control the traversal. Deviating from this feels like a compromise of
+the pattern's integrity. Architects practices __strict adherence to patterns__. They design the BFS algorithm to be a
+truly general-purpose traversal mechanism, capable of being used for any scenario where we need to visit every reachable node. Optimizing for a single "search" use case by baking termination logic into the `visit` method feels like specializing a general tool.
+
+:::tip[Core motivation of Architect]
+
+- elegance
+- correctness
+- consistency, and
+- future-proofing
+
+Architects believe in
+[doing things "the right way"](https://ai.qubitpi.org/posts/software-is-about-making-it-right/) according to established
+patterns and principles.
+
+:::
+
 
 
 

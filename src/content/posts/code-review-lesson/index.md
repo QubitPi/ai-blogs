@@ -337,4 +337,12 @@ clear, measurable performance improvement. Concepts like "separation of concerns
 optimize for. They are abstract, human-centric values that _don't easily translate into numerical scores_ in the same
 way execution time does.
 
-Large language models are trained on vast datasets of code from repositories like GitHub, Stack Overflow, and competitive programming platforms.
+### Bias in Training Data Reflected by Human's Business Push
+
+Large language models are trained on vast datasets of code from repositories like _GitHub_, _Stack Overflow_, and
+competitive programming platforms. Solutions on platforms like _LeetCode_ or _HackerRank_ often prioritize optimal time
+and space complexity for a specific problem over long-term architectural elegance or extensibility. A _boolean_ return
+for early termination is a common, efficient pattern in such contexts. While open-source projects can be
+well-architected, many also contain pragmatic solutions or "hacks" that were necessary to __ship features quickly or
+address immediate needs__. The sheer volume of "working code" might implicitly favor functionality and immediate
+performance over strict adherence to design patterns.

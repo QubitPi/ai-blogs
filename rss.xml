@@ -1422,10 +1422,10 @@ humans and current AI models &quot;think&quot; about software design.&lt;/p&gt;
 &lt;p&gt;AI models, especially those for code generation or review, are often trained to optimize for &lt;strong&gt;quantifiable metrics&lt;/strong&gt;.
 These metrics are typically things like:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;execution speed: How fast does the code run?&lt;/li&gt;
-&lt;li&gt;memory usage: How much memory does it consume?&lt;/li&gt;
-&lt;li&gt;lines of code/conciseness: Is the solution compact?&lt;/li&gt;
-&lt;li&gt;pass/fail rate: Does it correctly solve the immediate problem?&lt;/li&gt;
+&lt;li&gt;execution speed - How fast does the code run?&lt;/li&gt;
+&lt;li&gt;memory usage - How much memory does it consume?&lt;/li&gt;
+&lt;li&gt;lines of code/conciseness - Is the solution compact?&lt;/li&gt;
+&lt;li&gt;pass/fail rate - Does it correctly solve the immediate problem?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The &quot;Hacker&quot; approach directly correlates with these metrics. A quick, pragmatic solution that achieves immediate
 performance gains is highly rewarded by such metrics. Returning &lt;code&gt;false&lt;/code&gt; to terminate a loop immediately provides a
@@ -1441,6 +1441,32 @@ for early termination is a common, efficient pattern in such contexts. While ope
 well-architected, many also contain pragmatic solutions or &quot;hacks&quot; that were necessary to &lt;strong&gt;ship features quickly or
 address immediate needs&lt;/strong&gt;. The sheer volume of &quot;working code&quot; might implicitly favor functionality and immediate
 performance over strict adherence to design patterns.&lt;/p&gt;
+&lt;h3&gt;AI Doesn&apos;t &quot;Feel&quot;&lt;/h3&gt;
+&lt;p&gt;An AI doesn&apos;t experience the human pain of technical debt, such as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the late-night debugging sessions&lt;/li&gt;
+&lt;li&gt;the frustration of refactoring brittle code&lt;/li&gt;
+&lt;li&gt;the missed deadlines due to unforeseen architectural limitations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It doesn&apos;t &quot;feel&quot; the pain of &quot;Technical Debt&quot; or the long-term cost of a &quot;quick and dirty&quot; solution. An AI doesn&apos;t
+have a &quot;future self&quot; that will have to maintain the code it generates 5 years down the line. Its objective is typically
+to provide the &quot;best&quot; output now based on its current training and prompt.&lt;/p&gt;
+&lt;p&gt;Architectural patterns are often about making code easier for &lt;strong&gt;humans&lt;/strong&gt; to understand, collaborate on, and maintain
+over years. An AI doesn&apos;t participate in team meetings, doesn&apos;t onboard new developers, and doesn&apos;t struggle with
+cognitive load when reading complex, tightly coupled code. Its &quot;understanding&quot; is statistical, not experiential.&lt;/p&gt;
+&lt;p&gt;AI excels at recognizing patterns in data. If it sees that &lt;em&gt;boolean&lt;/em&gt; returns in traversal methods are frequently
+associated with higher performance in its training data for search-like tasks, it will learn to suggest that pattern.
+On the other side of the spectrum, abstract design principles like the &lt;em&gt;Single Responsibility Principle&lt;/em&gt; or the
+&lt;em&gt;Open/Closed Principle&lt;/em&gt; require a level of &lt;strong&gt;abstract reasoning&lt;/strong&gt; about software evolution and human factors that current
+AI models struggle with. They can describe these principles if trained on text about them, but applying them
+&lt;strong&gt;creatively&lt;/strong&gt; and contextually in code generation is still a frontier.&lt;/p&gt;
+&lt;p&gt;:::important&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Contemporary AI does NOT know how to feel&lt;/strong&gt;, a complex human capability rooted in our psychological
+subconsciousness.&lt;/li&gt;
+&lt;li&gt;Works involving creative abstract reasoning are less likely to be taken over by contemporary AI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:::&lt;/p&gt;
 </content:encoded></item><item><title>Why Do People Study Ancient Languages?</title><link>https://ai.qubitpi.org/posts/ancient-languages/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/ancient-languages/</guid><description>A fascination with things from the past, like ancient languages, is a common and deeply rooted human interest. There
 are a number of reasons for this, ranging from the intellectual and practical to the emotional and psychological.
 </description><pubDate>Sun, 03 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The discovery of a new Roman villa or the deciphering of an ancient scroll still captivates our imagination. But why do

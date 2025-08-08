@@ -1173,7 +1173,35 @@ one with the highest estimated value, i.e. a greedy action:&lt;/p&gt;
 &lt;p&gt;$$&lt;/p&gt;
 &lt;p&gt;A_t = \argmax_a Q_t(a)&lt;/p&gt;
 &lt;p&gt;$$&lt;/p&gt;
-</content:encoded></item><item><title>A Lession From AI Code Review</title><link>https://ai.qubitpi.org/posts/code-review-lesson/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/code-review-lesson/</guid><description>A code review session sparked my new approach toward working with different types of people</description><pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;img/conversation-with-ai.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content:encoded></item><item><title>A Lession From AI Code Review</title><link>https://ai.qubitpi.org/posts/code-review-lesson/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/code-review-lesson/</guid><description>A code review session sparked my new approach toward working with different types of people</description><pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188&lt;/p&gt;
+&lt;p&gt;The code in question is the follows&lt;/p&gt;
+&lt;p&gt;:::note&lt;/p&gt;
+&lt;p&gt;The irrelevant codes, such as Javadoc, &lt;code&gt;import&lt;/code&gt;s, null-checks, etc., have been removed to reduce the distractions&lt;/p&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public interface NodeVisitor {
+
+    void visit(AbstractNode node);
+}
+
+public class Bfs {
+    
+    public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
+        final Deque&amp;lt;AbstractNode&amp;gt; queue = new ArrayDeque&amp;lt;&amp;gt;(Collections.singleton(startNode));
+        final Set&amp;lt;String&amp;gt; visited = new HashSet&amp;lt;&amp;gt;(Collections.singleton(startNode.getLabel()));
+
+        while (!queue.isEmpty()) {
+            final AbstractNode currentNode = queue.removeFirst();
+            currentNode.accept(visitor);
+            for (final AbstractNode neighbor : currentNode.getNeighbors()) {
+                if (!visited.contains(neighbor.getLabel())) {
+                    visited.add(neighbor.getLabel());
+                    queue.addLast(neighbor);
+                }
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;The Two Conflicting Personalities behind the Two Software Design&lt;/h2&gt;
 &lt;p&gt;Different personality types can drive these software design debates. In the context of the BFS visitor pattern discussion, two conflicting personalities often emerge: the Architect and the Hacker.&lt;/p&gt;
 &lt;h2&gt;What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?&lt;/h2&gt;

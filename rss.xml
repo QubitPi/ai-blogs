@@ -1188,20 +1188,17 @@ for review:&lt;/p&gt;
     void visit(AbstractNode node);
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;public class Bfs {
-    
-    public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
-        final Deque&amp;lt;AbstractNode&amp;gt; queue = new ArrayDeque&amp;lt;&amp;gt;(Collections.singleton(startNode));
-        final Set&amp;lt;String&amp;gt; visited = new HashSet&amp;lt;&amp;gt;(Collections.singleton(startNode.getLabel()));
+&lt;pre&gt;&lt;code&gt;public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
+    final Deque&amp;lt;AbstractNode&amp;gt; queue = new ArrayDeque&amp;lt;&amp;gt;(Collections.singleton(startNode));
+    final Set&amp;lt;String&amp;gt; visited = new HashSet&amp;lt;&amp;gt;(Collections.singleton(startNode.getLabel()));
 
-        while (!queue.isEmpty()) {
-            final AbstractNode currentNode = queue.removeFirst();
-            currentNode.accept(visitor);
-            for (final AbstractNode neighbor : currentNode.getNeighbors()) {
-                if (!visited.contains(neighbor.getLabel())) {
-                    visited.add(neighbor.getLabel());
-                    queue.addLast(neighbor);
-                }
+    while (!queue.isEmpty()) {
+        final AbstractNode currentNode = queue.removeFirst();
+        currentNode.accept(visitor);
+        for (final AbstractNode neighbor : currentNode.getNeighbors()) {
+            if (!visited.contains(neighbor.getLabel())) {
+                visited.add(neighbor.getLabel());
+                queue.addLast(neighbor);
             }
         }
     }

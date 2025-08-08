@@ -179,9 +179,6 @@ Hackers are focused on making the current system perform optimally.
 
 :::
 
-
-
-
 What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?
 -------------------------------------------------------------------------------------------------------------
 

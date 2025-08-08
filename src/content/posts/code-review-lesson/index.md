@@ -325,10 +325,10 @@ humans and current AI models "think" about software design.
 AI models, especially those for code generation or review, are often trained to optimize for __quantifiable metrics__.
 These metrics are typically things like:
 
-- execution speed: How fast does the code run?
-- memory usage: How much memory does it consume?
-- lines of code/conciseness: Is the solution compact?
-- pass/fail rate: Does it correctly solve the immediate problem?
+- execution speed - How fast does the code run?
+- memory usage - How much memory does it consume?
+- lines of code/conciseness - Is the solution compact?
+- pass/fail rate - Does it correctly solve the immediate problem?
 
 The "Hacker" approach directly correlates with these metrics. A quick, pragmatic solution that achieves immediate
 performance gains is highly rewarded by such metrics. Returning `false` to terminate a loop immediately provides a
@@ -346,3 +346,34 @@ for early termination is a common, efficient pattern in such contexts. While ope
 well-architected, many also contain pragmatic solutions or "hacks" that were necessary to __ship features quickly or
 address immediate needs__. The sheer volume of "working code" might implicitly favor functionality and immediate
 performance over strict adherence to design patterns.
+
+### AI Doesn't "Feel"
+
+An AI doesn't experience the human pain of technical debt, such as
+
+- the late-night debugging sessions
+- the frustration of refactoring brittle code
+- the missed deadlines due to unforeseen architectural limitations.
+
+It doesn't "feel" the pain of "Technical Debt" or the long-term cost of a "quick and dirty" solution. An AI doesn't
+have a "future self" that will have to maintain the code it generates 5 years down the line. Its objective is typically
+to provide the "best" output now based on its current training and prompt.
+
+Architectural patterns are often about making code easier for __humans__ to understand, collaborate on, and maintain
+over years. An AI doesn't participate in team meetings, doesn't onboard new developers, and doesn't struggle with
+cognitive load when reading complex, tightly coupled code. Its "understanding" is statistical, not experiential.
+
+AI excels at recognizing patterns in data. If it sees that _boolean_ returns in traversal methods are frequently
+associated with higher performance in its training data for search-like tasks, it will learn to suggest that pattern.
+On the other side of the spectrum, abstract design principles like the _Single Responsibility Principle_ or the
+_Open/Closed Principle_ require a level of __abstract reasoning__ about software evolution and human factors that current
+AI models struggle with. They can describe these principles if trained on text about them, but applying them
+__creatively__ and contextually in code generation is still a frontier.
+
+:::important
+
+- __Contemporary AI does NOT know how to feel__, a complex human capability rooted in our psychological
+  subconsciousness.
+- Works involving creative abstract reasoning are less likely to be taken over by contemporary AI
+
+:::

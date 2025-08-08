@@ -1195,7 +1195,7 @@ cases. The code below shows the &lt;em&gt;simplified&lt;/em&gt; version of my fi
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;public abstract class AbstractNode {
-    
+
     void accept(final NodeVisitor visitor) {
         visitor.visit(this);
     }

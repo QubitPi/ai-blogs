@@ -1,5 +1,5 @@
 ---
-title: A Lesson from AI Code Review - Exploring Human Psychology
+title: A Lesson from AI Code Review - Exploring Human Psychology and Machine Determinism
 published: 2025-08-08
 description: A code review session sparked my new approach toward working with different types of people
 image: cover.png
@@ -92,12 +92,12 @@ details and it's enough for us to transcendentalize the topic:
 - I started to ask: __what are the two conflicting philosophical or psychological ideologies behind this BFS design
   debate between human and machine?__
 
-Turning Point - From Code Review to Ideologies
-----------------------------------------------
+Turning Point - From "Code Review Debates" to "Ideologies Conflicts"
+--------------------------------------------------------------------
 
 The debate over the `void` versus `boolean` return type for a `visit` method in a BFS Visitor pattern implementation,
 particularly concerning early termination, actually stems from two conflicting philosophical or psychological ideologies
-in software design: Purism (or Idealism) vs. Pragmatism
+in software design: __Purism (or Idealism) vs. Pragmatism__
 
 __Idealism__ champions strict adherence to design patterns and principles (like the _Single Responsibility Principle_
 and _Command-Query Separation_). From a purist perspective, the _Visitor_'s sole responsibility is to perform an
@@ -121,11 +121,11 @@ it's a worthwhile trade-off. The goal is to build effective software that meets 
 means adapting patterns to fit specific performance requirements. This approach values utility, performance, and solving
 immediate problems efficiently.
 
-Pragmatism possesses the viewpoint of _specific optimization_ that focuses on optimizing for a particular use case, such as finding a
-target node as quickly as possible. For this specific scenario, continuing the traversal after the target is found is
-clearly inefficient. The argument is that if a common and critical use case (like searching) can be made significantly
-faster by a minor adjustment to the API, that optimization should be considered. This prioritizes the performance of a
-frequently executed operation over the absolute theoretical purity of the general traversal.
+Pragmatism possesses the viewpoint of _specific optimization_ that focuses on optimizing for a particular use case, such
+as finding a target node as quickly as possible. For this specific scenario, continuing the traversal after the target
+is found is clearly inefficient. The argument is that if a common and critical use case (like searching) can be made
+significantly faster by a minor adjustment to the API, that optimization should be considered. This prioritizes the
+performance of a frequently executed operation over the absolute theoretical purity of the general traversal.
 
 The Two Conflicting Personalities behind the Two Software Design
 ----------------------------------------------------------------
@@ -286,16 +286,50 @@ the negative consequences of disorder can create a strong desire to build robust
 encountered systems or processes that were unreliable, broke easily, or were difficult to understand, it could foster a
 drive to design for stability and clarity.
 
-From a personality traits, potentially innate or early-developed, perspective, individuals naturally high in conscientiousness (a Big Five personality trait) tend to be organized, disciplined,
+From a personality traits, potentially innate or early-developed, perspective, individuals naturally high in
+conscientiousness (a Big Five personality trait) tend to be organized, disciplined,
 dutiful, and prefer planned behavior. This aligns well with the Architect's need for structure and foresight. A natural
 aversion to risk or uncertainty might lead someone to prefer designs that minimize potential failure points and
-prioritize predictability. A predisposition for breaking down problems into components, understanding interdependencies, and seeing the "big picture" from an early age (e.g., enjoying complex puzzles, building intricate models) can translate into architectural thinking.
+prioritize predictability. A predisposition for breaking down problems into components, understanding interdependencies,
+and seeing the "big picture" from an early age (e.g., enjoying complex puzzles, building intricate models) can translate
+into architectural thinking.
 
 #### For the "Hacker" Mindset 💻
 
-The "Hacker's" drive for rapid iteration, immediate solutions, and direct impact often stems from experiences that reward
-__adaptability__, __quick problem-solving__, and __tangible results__.
+The "Hacker's" drive for rapid iteration, immediate solutions, and direct impact often stems from experiences that
+reward __adaptability__, __quick problem-solving__, and __tangible results__.
 
-This mind set usually result from the early experiences in Resource-Constrained or Fast-Paced Environments. Growing up in situations where resources were scarce, and creative, immediate solutions were necessary to overcome challenges, can foster a "hack it together" mentality. They learn to be resourceful and prioritize getting something working over perfect execution. Hobbies like building with LEGOs or playing video games where immediate actions lead to immediate, visible results reinforce a preference for quick iterations, rapid feedback loops and tangible progress. A childhood spent tinkering, disassembling things to see how they work, and experimenting with solutions (even if they were "messy") can lead to a comfort with trial-and-error and a focus on functional outcomes.
+This mind set usually result from the early experiences in Resource-Constrained or Fast-Paced Environments. Growing up
+in situations where resources were scarce, and creative, immediate solutions were necessary to overcome challenges, can
+foster a "hack it together" mentality. They learn to be resourceful and prioritize getting something working over
+perfect execution. Hobbies like building with LEGOs or playing video games where immediate actions lead to immediate,
+visible results reinforce a preference for quick iterations, rapid feedback loops and tangible progress. A childhood
+spent tinkering, disassembling things to see how they work, and experimenting with solutions (even if they were "messy")
+can lead to a comfort with trial-and-error and a focus on functional outcomes.
 
-Individuals high in openness tend to be curious, inventive, and prefer novelty. This can manifest as a desire to explore new solutions quickly and a willingness to deviate from established norms. A comfort with uncertainty and a willingness to take calculated risks (e.g., trying unconventional solutions, not needing a complete plan before starting) can drive a more experimental, pragmatic approach. A personality that prefers to jump in and start building rather than spending extensive time planning. They learn by doing and iterating. The intense satisfaction of quickly solving a problem or seeing a piece of code immediately work can be a powerful motivator, leading them to prioritize rapid implementation.
+Individuals high in openness tend to be curious, inventive, and prefer novelty. This can manifest as a desire to explore
+new solutions quickly and a willingness to deviate from established norms. A comfort with uncertainty and a willingness
+to take calculated risks (e.g., trying unconventional solutions, not needing a complete plan before starting) can drive
+a more experimental, pragmatic approach. A personality that prefers to jump in and start building rather than spending
+extensive time planning. They learn by doing and iterating. The intense satisfaction of quickly solving a problem or
+seeing a piece of code immediately work can be a powerful motivator, leading them to prioritize rapid implementation.
+
+Why Does AI Favors Hacker Mindset?
+----------------------------------
+
+The fact that AI code reviewer leans towards a "Hacker" ideology highlights some fundamental differences between how
+humans and current AI models "think" about software design.
+
+AI models, especially those for code generation or review, are often trained to optimize for __quantifiable__ metrics.
+These metrics are typically things like:
+
+- __execution speed__: How fast does the code run?
+- __memory usage__: How much memory does it consume?
+- __lines of code/conciseness__: Is the solution compact?
+- __pass/fail rate__: Does it correctly solve the immediate problem?
+
+The "Hacker" approach directly correlates with these metrics. A quick, pragmatic solution that achieves immediate
+performance gains is highly rewarded by such metrics. Returning `false` to terminate a loop immediately provides a
+clear, measurable performance improvement. Concepts like "separation of concerns," "extensibility," "maintainability,"
+"readability for future developers," or "reducing technical debt" are much harder for an AI to directly quantify and
+optimize for. They are abstract, human-centric values that _don't easily translate into numerical scores_ in the same way execution time does.

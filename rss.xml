@@ -1186,8 +1186,8 @@ for review:&lt;/p&gt;
 
     void visit(AbstractNode node);
 }
-
-public class Bfs {
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;public class Bfs {
     
     public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
         final Deque&amp;lt;AbstractNode&amp;gt; queue = new ArrayDeque&amp;lt;&amp;gt;(Collections.singleton(startNode));

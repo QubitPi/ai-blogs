@@ -9,7 +9,7 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
   title: "Jiaqi\'s AI Blogs",
-  subtitle: "The Future is a game between AI's Determinism and Human's Libertarianism",
+  subtitle: "The future is a game between AI's Determinism and Human's Libertarianism",
   lang: "en",
   themeColor: {
     hue: 250,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345

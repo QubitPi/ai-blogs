@@ -1242,8 +1242,7 @@ debate between human and machine?&lt;/strong&gt;&lt;/li&gt;
 &lt;h2&gt;Turning Point - From Code Review to Ideologies&lt;/h2&gt;
 &lt;p&gt;The debate over the &lt;code&gt;void&lt;/code&gt; versus &lt;code&gt;boolean&lt;/code&gt; return type for a &lt;code&gt;visit&lt;/code&gt; method in a BFS Visitor pattern implementation,
 particularly concerning early termination, actually stems from two conflicting philosophical or psychological ideologies
-in software design:&lt;/p&gt;
-&lt;h3&gt;Purism (or Idealism) vs. Pragmatism&lt;/h3&gt;
+in software design: Purism (or Idealism) vs. Pragmatism&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Idealism&lt;/strong&gt; champions strict adherence to design patterns and principles (like the &lt;em&gt;Single Responsibility Principle&lt;/em&gt;
 and &lt;em&gt;Command-Query Separation&lt;/em&gt;). From a purist perspective, the &lt;em&gt;Visitor&lt;/em&gt;&apos;s sole responsibility is to perform an
 operation on the visited element, not to dictate the flow of the traversal. Returning a &lt;em&gt;boolean&lt;/em&gt; for control flow

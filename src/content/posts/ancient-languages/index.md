@@ -228,7 +228,7 @@ antiquity languages:
     |:---------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------:|
     |                                                     ![](img/cambridge-greek-lexicon.png)                                                      |                                    ![](img/oxford-greek-lexicon.png)                                     |
 
-  - [Greek: An Intensive Course, 2nd Revised Edition] (https://pdfcoffee.com/4-hansen-hardy-quinn-gerald-m-greek-an-intensive-course-5-pdf-free.html)
+  - [Greek: An Intensive Course, 2nd Revised Edition](https://pdfcoffee.com/4-hansen-hardy-quinn-gerald-m-greek-an-intensive-course-5-pdf-free.html)
 
     ![](img/greek-an-intensive-course.png)
 

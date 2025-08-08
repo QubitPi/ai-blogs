@@ -57,6 +57,10 @@ and I left my response as follows:
 
 ![](./img/conversation-with-ai-2.png)
 
+The AI is resisting with the following followup:
+
+
+
 The Two Conflicting Personalities behind the Two Software Design
 ----------------------------------------------------------------
 

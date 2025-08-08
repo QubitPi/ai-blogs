@@ -16,8 +16,9 @@ It was a regular AI review session in
 background - I was implementing a general BFS (Breadth-First Search) algorithm which can be whipped as a JAR library
 into one of my developing Java webservices to solve various business problems. To boost its generality, I decided to
 implement it using the [Visitor pattern](https://refactoring.guru/design-patterns/visitor), which by design is able to
-separate the fixed algorithm and variable business logic. The code below shows the _simplified_ version of my first
-draft sent to [gemini-code-assist](https://developers.google.com/gemini-code-assist/docs/review-github-code) for review:
+separate the fixed algorithm and variable business logic and, therefore, make the algorithm applicable to general use
+cases. The code below shows the _simplified_ version of my first draft sent to
+[gemini-code-assist](https://developers.google.com/gemini-code-assist/docs/review-github-code) for review:
 
 :::tip
 
@@ -73,7 +74,7 @@ and I left my response as follows:
 
 ![](./img/conversation-with-ai-2.png)
 
-My response focuses on telling AI returning `boolean` in this case was __not a standard__ Visitor practice. The AI,
+My response focused on telling AI returning `boolean` in this case was __not a standard__ Visitor practice. The AI,
 however, is resisting with the following followup:
 
 ![](./img/conversation-with-ai-3.png)

@@ -109,6 +109,13 @@ should be generic and complete its traversal of reachable nodes, while the _Visi
 element-specific action. This approach values the elegance, maintainability, and long-term extensibility that comes from
 clear, decoupled responsibilities.
 
+Idealism favors the perspective of _Generality_, which emphasizes creating reusable, broadly applicable algorithms. The
+[`traverse`](#how-the-lesson-started-by-accident) method designed for generality aims to visit all reachable nodes,
+regardless of the visitor's internal goal. It's a foundational traversal primitive. Making it stop early based on a
+visitor's signal would specialize it into a "search-and-terminate" algorithm, potentially limiting its utility for other
+scenarios that genuinely require a full traversal (e.g., calculating graph properties, building a complete map of
+connections). This aligns with the idea of building robust, foundational components.
+
 __Pragmatism__, on the other hand, prioritizes practical outcomes and efficiency over strict theoretical purity. A
 pragmatic designer would argue that if a slight deviation from a pattern's rigid definition (like returning a `boolean`
 from `visit`) leads to significant performance improvements (e.g., avoiding unnecessary computation on large graphs),
@@ -116,16 +123,7 @@ it's a worthwhile trade-off. The goal is to build effective software that meets 
 means adapting patterns to fit specific performance requirements. This approach values utility, performance, and solving
 immediate problems efficiently.
 
-### 2: Generality vs. Specific Optimization
-
-__Generality__ perspective emphasizes creating reusable, broadly applicable algorithms. The
-[`traverse`](#how-the-lesson-started-by-accident) method designed for generality aims to visit all reachable nodes,
-regardless of the visitor's internal goal. It's a foundational traversal primitive. Making it stop early based on a
-visitor's signal would specialize it into a "search-and-terminate" algorithm, potentially limiting its utility for other
-scenarios that genuinely require a full traversal (e.g., calculating graph properties, building a complete map of
-connections). This aligns with the idea of building robust, foundational components.
-
-The viewpoint of __specific optimization__, however, focuses on optimizing for a particular use case, such as finding a
+Pragmatism possesses the viewpoint of __specific optimization__ that focuses on optimizing for a particular use case, such as finding a
 target node as quickly as possible. For this specific scenario, continuing the traversal after the target is found is
 clearly inefficient. The argument is that if a common and critical use case (like searching) can be made significantly
 faster by a minor adjustment to the API, that optimization should be considered. This prioritizes the performance of a

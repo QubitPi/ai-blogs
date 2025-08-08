@@ -1182,8 +1182,8 @@ version of my first draft sent to &lt;a href=&quot;https://developers.google.com
 for review:&lt;/p&gt;
 &lt;p&gt;:::tip&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The irrelevant codes, such as Javadoc, &lt;code&gt;import&lt;/code&gt;s, null-checks, etc., have been removed to reduce the distractions&lt;/li&gt;
-&lt;li&gt;The complete code and the conversation between AI and me can be found it the
+&lt;li&gt;The irrelevant codes, such as Javadoc, &lt;code&gt;import&lt;/code&gt;s, null-checks, etc., have been removed to highlight the essentials&lt;/li&gt;
+&lt;li&gt;The complete conversation between AI and me can be found in the
 &lt;a href=&quot;https://github.com/QubitPi/gearbox/pull/23&quot;&gt;original pull request&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;:::&lt;/p&gt;

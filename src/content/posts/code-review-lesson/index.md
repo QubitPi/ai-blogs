@@ -134,7 +134,9 @@ frequently executed operation over the absolute theoretical purity of the genera
 The Two Conflicting Personalities behind the Two Software Design
 ----------------------------------------------------------------
 
-Different personality types can drive these software design debates. In the context of the BFS visitor pattern discussion, two conflicting personalities often emerge: the Architect and the Hacker.
+Different personality types can drive these software design debates as well. In the [context of the BFS visitor pattern
+discussion](#how-the-lesson-started-by-accident), two conflicting personalities often emerge: the __Architect__ and the
+__Hacker__.
 
 What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?
 -------------------------------------------------------------------------------------------------------------

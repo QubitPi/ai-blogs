@@ -55,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: "assets/images/avatar.png",  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: "Jiaqi Liu",
-  bio: "The Future is a game between AI's Determinism and Human's Libertarianism",
+  bio: "The future is a game between AI's Determinism and Human's Libertarianism",
   links: [
     {
       name: 'Hugging Face',

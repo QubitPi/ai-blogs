@@ -1,5 +1,5 @@
 ---
-title: Determinism - Future Has All Been Pre-Computed
+title: Determinism - The Future Has All Been Pre-Computed
 published: 2024-12-26
 updated: 2025-07-31
 description: |

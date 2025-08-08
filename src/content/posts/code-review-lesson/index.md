@@ -83,7 +83,12 @@ balancing __strict adherence to a pattern's principles__ with __real-world perfo
 
 ![](./img/conversation-with-ai-4.png)
 
+The story went on...The [original pull request](https://github.com/QubitPi/gearbox/pull/23) had all the followup
+details and it's enough for us to transcendentalize the topic:
 
+- The AI really masters communicating _professionally_ in the tech debate, and more importantly
+- I started to ask: __what are the two conflicting philosophical or psychological ideologies behind this BFS design
+  debate between human and machine?__
 
 The Two Conflicting Personalities behind the Two Software Design
 ----------------------------------------------------------------

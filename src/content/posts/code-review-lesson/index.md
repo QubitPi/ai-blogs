@@ -1,5 +1,5 @@
 ---
-title: A Lession From AI Code Review
+title: A Lesson From AI Code Review
 published: 2025-08-08
 description: A code review session sparked my new approach toward working with different types of people
 image: cover.png
@@ -8,9 +8,12 @@ category: English
 draft: false
 ---
 
-https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188
-
-The code in question is the follows
+It was a regular AI review session in
+[a pull request](https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188) on one of my projects. Little
+background - I was implementing a general BFS (Breadth-First Search) algorithm which can be whipped as a JAR library into one of my developing Java webservices to solve various business problems. To boost its generality, I decided to implement it
+using the [Visitor pattern](https://refactoring.guru/design-patterns/visitor) and the code below shows the simplified
+version of my first draft sent to [gemini-code-assist](https://developers.google.com/gemini-code-assist/docs/review-github-code)
+for review:
 
 :::note
 
@@ -43,6 +46,15 @@ public class Bfs {
     }
 }
 ```
+
+
+
+![](./img/conversation-with-ai.png)
+
+Basically, the AI is asking me to __break the strict Visitor pattern for a performance gain__. This almost immediately
+triggered my opposition and I left my response as follows:
+
+![](./img/conversation-with-ai-2.png)
 
 The Two Conflicting Personalities behind the Two Software Design
 ----------------------------------------------------------------

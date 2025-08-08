@@ -1285,7 +1285,7 @@ specializing a general tool.&lt;/p&gt;
 or limiting future extensibility. Architects argue that for most graphs, the overhead of continuing a few extra
 iterations after a target is found is negligible, and for truly massive graphs, a &lt;strong&gt;long-term view&lt;/strong&gt; of more fundamental
 architectural changes might be needed anyway. They prioritize &lt;strong&gt;correctness over convenience&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;:::tip[Core motivation of Architect]&lt;/p&gt;
+&lt;p&gt;:::tip[Core motivations of Architect]&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;elegance&lt;/li&gt;
 &lt;li&gt;correctness&lt;/li&gt;
@@ -1295,6 +1295,9 @@ architectural changes might be needed anyway. They prioritize &lt;strong&gt;corr
 &lt;p&gt;Architects believe in
 &lt;a href=&quot;https://ai.qubitpi.org/posts/software-is-about-making-it-right/&quot;&gt;doing things &quot;the right way&quot;&lt;/a&gt; according to established
 patterns and principles.&lt;/p&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;h3&gt;The Hacker 💻&lt;/h3&gt;
+&lt;p&gt;:::tip[Core motivations of Hacker]&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
 &lt;h2&gt;What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?&lt;/h2&gt;
 &lt;h3&gt;Technical&lt;/h3&gt;

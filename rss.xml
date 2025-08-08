@@ -1433,7 +1433,14 @@ clear, measurable performance improvement. Concepts like &quot;separation of con
 &quot;readability for future developers,&quot; or &quot;reducing technical debt&quot; are much harder for an AI to directly quantify and
 optimize for. They are abstract, human-centric values that &lt;em&gt;don&apos;t easily translate into numerical scores&lt;/em&gt; in the same
 way execution time does.&lt;/p&gt;
-&lt;p&gt;Large language models are trained on vast datasets of code from repositories like GitHub, Stack Overflow, and competitive programming platforms.&lt;/p&gt;
+&lt;h3&gt;Bias in Training Data Reflected by Human&apos;s Business Push&lt;/h3&gt;
+&lt;p&gt;Large language models are trained on vast datasets of code from repositories like &lt;em&gt;GitHub&lt;/em&gt;, &lt;em&gt;Stack Overflow&lt;/em&gt;, and
+competitive programming platforms. Solutions on platforms like &lt;em&gt;LeetCode&lt;/em&gt; or &lt;em&gt;HackerRank&lt;/em&gt; often prioritize optimal time
+and space complexity for a specific problem over long-term architectural elegance or extensibility. A &lt;em&gt;boolean&lt;/em&gt; return
+for early termination is a common, efficient pattern in such contexts. While open-source projects can be
+well-architected, many also contain pragmatic solutions or &quot;hacks&quot; that were necessary to &lt;strong&gt;ship features quickly or
+address immediate needs&lt;/strong&gt;. The sheer volume of &quot;working code&quot; might implicitly favor functionality and immediate
+performance over strict adherence to design patterns.&lt;/p&gt;
 </content:encoded></item><item><title>Why Do People Study Ancient Languages?</title><link>https://ai.qubitpi.org/posts/ancient-languages/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/ancient-languages/</guid><description>A fascination with things from the past, like ancient languages, is a common and deeply rooted human interest. There
 are a number of reasons for this, ranging from the intellectual and practical to the emotional and psychological.
 </description><pubDate>Sun, 03 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The discovery of a new Roman villa or the deciphering of an ancient scroll still captivates our imagination. But why do

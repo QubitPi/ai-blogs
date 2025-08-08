@@ -118,8 +118,18 @@ immediate problems efficiently.
 
 ### 2: Generality vs. Specific Optimization
 
+__Generality__ perspective emphasizes creating reusable, broadly applicable algorithms. The
+[`traverse`](#how-the-lesson-started-by-accident) method designed for generality aims to visit all reachable nodes,
+regardless of the visitor's internal goal. It's a foundational traversal primitive. Making it stop early based on a
+visitor's signal would specialize it into a "search-and-terminate" algorithm, potentially limiting its utility for other
+scenarios that genuinely require a full traversal (e.g., calculating graph properties, building a complete map of
+connections). This aligns with the idea of building robust, foundational components.
 
-
+The viewpoint of __specific optimization__, however, focuses on optimizing for a particular use case, such as finding a
+target node as quickly as possible. For this specific scenario, continuing the traversal after the target is found is
+clearly inefficient. The argument is that if a common and critical use case (like searching) can be made significantly
+faster by a minor adjustment to the API, that optimization should be considered. This prioritizes the performance of a
+frequently executed operation over the absolute theoretical purity of the general traversal.
 
 The Two Conflicting Personalities behind the Two Software Design
 ----------------------------------------------------------------

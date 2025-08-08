@@ -32,20 +32,17 @@ public interface NodeVisitor {
 ```
 
 ```java title="General BFS implementation"
-public class Bfs {
-    
-    public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
-        final Deque<AbstractNode> queue = new ArrayDeque<>(Collections.singleton(startNode));
-        final Set<String> visited = new HashSet<>(Collections.singleton(startNode.getLabel()));
+public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
+    final Deque<AbstractNode> queue = new ArrayDeque<>(Collections.singleton(startNode));
+    final Set<String> visited = new HashSet<>(Collections.singleton(startNode.getLabel()));
 
-        while (!queue.isEmpty()) {
-            final AbstractNode currentNode = queue.removeFirst();
-            currentNode.accept(visitor);
-            for (final AbstractNode neighbor : currentNode.getNeighbors()) {
-                if (!visited.contains(neighbor.getLabel())) {
-                    visited.add(neighbor.getLabel());
-                    queue.addLast(neighbor);
-                }
+    while (!queue.isEmpty()) {
+        final AbstractNode currentNode = queue.removeFirst();
+        currentNode.accept(visitor);
+        for (final AbstractNode neighbor : currentNode.getNeighbors()) {
+            if (!visited.contains(neighbor.getLabel())) {
+                visited.add(neighbor.getLabel());
+                queue.addLast(neighbor);
             }
         }
     }

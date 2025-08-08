@@ -139,7 +139,8 @@ __Hacker__.
 "Architect" in this section is NOT to be confused with the "Architect" within the Myers-Briggs Type Indicator (MBTI)
 framework. The use of "Architect" and "Hacker" was intended to describe archetypes or roles in software development,
 representing distinct philosophical approaches to design, rather than strictly adhering to formal psychological
-personality typing systems like the 16-Personality scheme.
+personality typing systems like the 16-Personality scheme. The fact that MBTI also has an "Architect" (INTJ) type, which
+often describes individuals with strong logical, strategic, and planning tendencies, is a __coincidence of terminology__
 
 :::
 

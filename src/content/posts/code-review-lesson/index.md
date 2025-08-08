@@ -47,8 +47,6 @@ public class Bfs {
 }
 ```
 
-
-
 ![](./img/conversation-with-ai.png)
 
 Basically, the AI is asking me to __break the strict Visitor pattern for a performance gain__. This almost immediately

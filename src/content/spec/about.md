@@ -45,8 +45,8 @@ I believe AI fits in one side of the two prevailing views of this world:
 - __Philosophy__: the development of [Compatibilism](https://youtu.be/KETTtiprINU) that seeks the common ground between Determinism and
   Libertarianism
 - __Science__: the attempt to [unify General Relativity and Quantum Mechanics](https://en.wikipedia.org/wiki/Unified_field_theory) since Albert Einstein
-- __Social Media__: the discussions around the fight between radical determinism of Skynet and the brave libertarianism hold by human
-  resistance depicted [movie Terminator series](https://en.wikipedia.org/wiki/Terminator_(franchise)) and the like
+- __Public Media__: the discussions around the fight between radical determinism of Skynet and the brave libertarianism
+  hold by human resistance depicted in [movie _Terminator_ series](https://en.wikipedia.org/wiki/Terminator_(franchise)) and the like
 
   ![](./terminator-matrix.png)
 

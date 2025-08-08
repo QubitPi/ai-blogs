@@ -320,13 +320,13 @@ Why Does AI Favors Hacker Mindset?
 The fact that AI code reviewer leans towards a "Hacker" ideology highlights some fundamental differences between how
 humans and current AI models "think" about software design.
 
-AI models, especially those for code generation or review, are often trained to optimize for __quantifiable__ metrics.
+AI models, especially those for code generation or review, are often trained to optimize for __quantifiable metrics__.
 These metrics are typically things like:
 
-- __execution speed__: How fast does the code run?
-- __memory usage__: How much memory does it consume?
-- __lines of code/conciseness__: Is the solution compact?
-- __pass/fail rate__: Does it correctly solve the immediate problem?
+- execution speed: How fast does the code run?
+- memory usage: How much memory does it consume?
+- lines of code/conciseness: Is the solution compact?
+- pass/fail rate: Does it correctly solve the immediate problem?
 
 The "Hacker" approach directly correlates with these metrics. A quick, pragmatic solution that achieves immediate
 performance gains is highly rewarded by such metrics. Returning `false` to terminate a loop immediately provides a

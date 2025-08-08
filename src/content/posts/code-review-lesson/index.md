@@ -20,8 +20,8 @@ for review:
 
 :::tip
 
-- The irrelevant codes, such as Javadoc, `import`s, null-checks, etc., have been removed to reduce the distractions
-- The complete code and the conversation between AI and me can be found it the
+- The irrelevant codes, such as Javadoc, `import`s, null-checks, etc., have been removed to highlight the essentials
+- The complete conversation between AI and me can be found in the
   [original pull request](https://github.com/QubitPi/gearbox/pull/23)
 
 :::

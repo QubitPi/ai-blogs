@@ -97,9 +97,7 @@ Turning Point - From Code Review to Ideologies
 
 The debate over the `void` versus `boolean` return type for a `visit` method in a BFS Visitor pattern implementation,
 particularly concerning early termination, actually stems from two conflicting philosophical or psychological ideologies
-in software design:
-
-### Purism (or Idealism) vs. Pragmatism
+in software design: Purism (or Idealism) vs. Pragmatism
 
 __Idealism__ champions strict adherence to design patterns and principles (like the _Single Responsibility Principle_
 and _Command-Query Separation_). From a purist perspective, the _Visitor_'s sole responsibility is to perform an

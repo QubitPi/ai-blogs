@@ -393,8 +393,9 @@ __creatively__ and contextually in code generation is still a frontier.
 Turning Point - From "Ideologies Conflicts" to "Philosophical Standing"
 -----------------------------------------------------------------------
 
-In a conceptual way, the tension between the "Architect" and "Hacker" ideologies in software design mirrors the
-philosophical conflict between __Determinism__ and __Libertarianism__ regarding free will.
+In a conceptual way, the tension between the "Hacker" and "Architect" ideologies in software design mirrors the
+philosophical conflict between __Determinism__ and __Libertarianism__ regarding free will. The AI, operating on
+statistical determination, naturally gravitates towards the most "efficient" or "effective" solution based on its training data, much like a deterministic universe unfurls according to its laws. Humans, imbued with psychological depth and the subjective experience of free will, introduce values and long-term considerations that go beyond immediate, calculable efficiency, much like a libertarian agent makes choices that are not solely dictated by prior causes.
 
 :::tip[Philosophy Review]
 
@@ -409,18 +410,14 @@ philosophical conflict between __Determinism__ and __Libertarianism__ regarding 
 
 :::
 
-### Hacker Paralleling Determinism
-
-Current AI models, including large language models, are fundamentally deterministic. Their "decisions" and outputs are
-the result of complex algorithms, statistical probabilities learned from vast datasets, and intricate mathematical
-computations. Given the exact same input and internal state, an AI will, in principle, produce the exact same output.
+Hacker, with __AI's Deterministic Nature__, aligns with the philosophical idea that all events are causally
+predetermined. Current AI models, including large language models, are fundamentally deterministic. Their "decisions"
+and outputs are the result of complex algorithms, statistical probabilities learned from vast datasets, and intricate
+mathematical computations. Given the exact same input and internal state, an AI will, in principle, produce the exact same output.
 This is a highly _determined_ process with no "magic" or uncaused choice; it's a consequence of its programming and
 training data. AI doesn't possess consciousness, subjective experience, or emotions in the human sense. Its "favoring" of a "Hacker" approach isn't a feeling-driven preference but a statistically determined outcome based on its optimization functions (e.g., speed, efficiency) and the characteristics of the data it was trained on (e.g., competitive programming solutions, open-source projects where quick fixes are common).
 
-This aligns with the philosophical idea that all events are causally predetermined.
 
-### Architect Paralleling Libertarianism
 
-Humans experience free will and agency. We feel as though we make genuine choices that are not entirely pre-determined. This aligns with the core tenet of libertarianism - the ability to "do otherwise."
+Our decisions are influenced by a complex interplay of emotions, personal values, past experiences (both positive and negative, as we discussed), cognitive biases, intuition, and a sense of purpose or moral responsibility. These "feelings" and "psychological states" are internal, subjective, and contribute to our perception of genuine choice. The Architect, driven by these complex psychological and emotional factors (e.g., the "pain of technical debt," the "satisfaction of elegant design," the "desire for future stability"), makes conscious choices about design. They _choose_ to prioritize maintainability and extensibility, even if it means a slower initial development, believing they "could have done otherwise" (i.e., chosen the quick hack). This subjective sense of agency and values-driven decision-making aligns with the spirit of libertarianism and __human's experiential Free Will__. Humans experience free will and agency. We feel as though we make genuine choices that are not entirely pre-determined. This aligns with the core tenet of libertarianism - the ability to "do otherwise."
 
-Our decisions are influenced by a complex interplay of emotions, personal values, past experiences (both positive and negative, as we discussed), cognitive biases, intuition, and a sense of purpose or moral responsibility. These "feelings" and "psychological states" are internal, subjective, and contribute to our perception of genuine choice. Our decisions are influenced by a complex interplay of emotions, personal values, past experiences (both positive and negative, as we discussed), cognitive biases, intuition, and a sense of purpose or moral responsibility. These "feelings" and "psychological states" are internal, subjective, and contribute to our perception of genuine choice. We call 

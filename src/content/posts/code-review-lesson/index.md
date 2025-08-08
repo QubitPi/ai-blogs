@@ -170,7 +170,12 @@ patterns and principles.
 
 :::tip[Core motivations of Hacker]
 
-Speed, efficiency, tangible results, and practical solutions. They are focused on making the current system perform optimally.
+- speed
+- efficiency
+- tangible results, and
+- practical solutions
+
+Hackers are focused on making the current system perform optimally.
 
 :::
 

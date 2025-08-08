@@ -1173,6 +1173,95 @@ one with the highest estimated value, i.e. a greedy action:&lt;/p&gt;
 &lt;p&gt;$$&lt;/p&gt;
 &lt;p&gt;A_t = \argmax_a Q_t(a)&lt;/p&gt;
 &lt;p&gt;$$&lt;/p&gt;
+</content:encoded></item><item><title>A Lession From AI Code Review</title><link>https://ai.qubitpi.org/posts/code-review-lesson/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/code-review-lesson/</guid><description>A code review session sparked my new approach toward working with different types of people</description><pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;img/conversation-with-ai.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;The Two Conflicting Personalities behind the Two Software Design&lt;/h2&gt;
+&lt;p&gt;Different personality types can drive these software design debates. In the context of the BFS visitor pattern discussion, two conflicting personalities often emerge: the Architect and the Hacker.&lt;/p&gt;
+&lt;h2&gt;What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?&lt;/h2&gt;
+&lt;h3&gt;Technical&lt;/h3&gt;
+&lt;p&gt;Different past personal experiences often shape the divergent worldviews of the &quot;Architect&quot; and &quot;Hacker&quot; in software
+design. These experiences cultivate distinct priorities, risk tolerances, and problem-solving approaches.&lt;/p&gt;
+&lt;p&gt;:::important&lt;/p&gt;
+&lt;p&gt;Most people possess traits from both, and their experiences can lead to a more balanced approach over time.&lt;/p&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;h4&gt;The Architect&apos;s Formative Experiences 🏛️&lt;/h4&gt;
+&lt;p&gt;The &quot;Architect&quot; mindset is typically forged in environments where &lt;strong&gt;stability&lt;/strong&gt;, &lt;strong&gt;scalability&lt;/strong&gt;, &lt;strong&gt;long-term
+maintainability&lt;/strong&gt;, and risk mitigation are paramount.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Working on Large, Complex, and Long-Lived Systems&lt;/strong&gt;: Think enterprise software, financial systems, aerospace, or
+critical infrastructure. In these domains, a single bug can have catastrophic consequences (financial loss, safety
+hazards). Architects learn the hard way that quick fixes often lead to compounding
+&lt;a href=&quot;https://neontri.com/blog/enterprise-software-development/#technical-debt&quot;&gt;technical debt&lt;/a&gt; and instability over
+years.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Experiencing the Pain of Technical Debt&lt;/strong&gt;: They&apos;ve likely inherited or worked on systems that were initially
+&quot;hacked&quot; together for speed. They&apos;ve spent countless hours debugging, refactoring, and trying to extend brittle
+codebases, leading to a deep appreciation for upfront design and robust architecture.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Involvement in System Outages or Critical Bugs&lt;/strong&gt;: Being on call for major incidents caused by poor design, lack of
+testing, or insufficient planning teaches them the severe consequences of prioritizing speed over stability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Formal Education and Mentorship&lt;/strong&gt;: Often, Architects have a strong academic background in computer science,
+emphasizing theoretical correctness, algorithms, data structures, and software engineering principles. They may also
+have been mentored by senior engineers who instilled a disciplined approach to design.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Working in Regulated Industries&lt;/strong&gt;: Industries with strict compliance requirements (e.g., healthcare, finance,
+government) necessitate meticulous design, extensive documentation, and rigorous testing, reinforcing a methodical and
+risk-averse approach.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These experiences instill a deep-seated value for &lt;strong&gt;structure&lt;/strong&gt;, &lt;strong&gt;predictability&lt;/strong&gt;, and &lt;strong&gt;preventing future problems&lt;/strong&gt;,
+even if it means a slower initial pace. They see the entire lifecycle of software and understand the compounding cost of
+shortcuts.&lt;/p&gt;
+&lt;h4&gt;The Hacker&apos;s Formative Experiences 💻&lt;/h4&gt;
+&lt;p&gt;The &quot;Hacker&quot; mindset, in its positive sense, often develops in environments that prioritize &lt;strong&gt;speed&lt;/strong&gt;, &lt;strong&gt;rapid
+iteration&lt;/strong&gt;, &lt;strong&gt;immediate impact&lt;/strong&gt;, and &lt;strong&gt;direct problem-solving&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Startup or Fast-Paced Environments&lt;/strong&gt;: In startups, the primary goal is often to find product-market fit quickly,
+ship features rapidly, and iterate based on user feedback. Survival depends on speed, and &quot;perfect&quot; architecture can
+be seen as a luxury that delays crucial market entry.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Being a &quot;Hero&quot; Problem Solver&lt;/strong&gt;: They might have gained recognition for quickly fixing urgent production issues,
+implementing features under tight deadlines, or building prototypes that demonstrate immediate value. This reinforces
+the idea that direct action and quick results are highly valued.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Self-Taught or Project-Based Learning&lt;/strong&gt;: Many &quot;Hackers&quot; are highly skilled self-starters who learned by doing,
+experimenting, and building. Their knowledge is often gained through practical application and overcoming immediate
+technical hurdles, rather than through abstract theoretical study.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Projects with Short Lifespans or Disposable Prototypes&lt;/strong&gt;: If a project is meant to be a proof-of-concept or has a
+limited expected lifespan, the long-term architectural concerns become less relevant than getting it working quickly.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Focus on Direct Performance Gains&lt;/strong&gt;: They are often acutely aware of performance bottlenecks and driven to optimize
+code directly for speed, seeing any &quot;unnecessary&quot; abstraction or indirection as a barrier to efficiency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These experiences cultivate a strong bias towards &lt;strong&gt;action&lt;/strong&gt;, &lt;strong&gt;efficiency&lt;/strong&gt;, and &lt;strong&gt;delivering tangible results now&lt;/strong&gt;.
+They are less concerned with hypothetical future problems and more focused on solving the current challenge in the most
+direct way possible.&lt;/p&gt;
+&lt;h3&gt;Psychological&lt;/h3&gt;
+&lt;p&gt;Certain early life experiences and inherent temperaments can also predispose individuals to lean towards an &quot;Architect&quot;
+or &quot;Hacker&quot; worldview.&lt;/p&gt;
+&lt;p&gt;:::important&lt;/p&gt;
+&lt;p&gt;Early experiences often lay the groundwork for how individuals approach challenges, deal with uncertainty, and
+prioritize different aspects of a solution. It is, therefore, important to remember that these are tendencies, not
+deterministic paths. Many individuals develop a blend of these traits, and &lt;a href=&quot;#technical&quot;&gt;professional experience&lt;/a&gt; will
+reinforce or modify these predispositions.&lt;/p&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;h4&gt;For the &quot;Architect&quot; Mindset 🏛️&lt;/h4&gt;
+&lt;p&gt;The Architect&apos;s preference for structure, planning, and long-term stability often stems from experiences that emphasize
+&lt;strong&gt;order&lt;/strong&gt;, &lt;strong&gt;consequences&lt;/strong&gt;, and &lt;strong&gt;thoroughness&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;There are positive forces that drives one into this direction. Children raised in environments with clear, consistently
+enforced rules and predictable consequences may develop a strong internal sense of order and a belief in the importance
+of adherence to established guidelines. They learn that following rules prevents negative outcomes and leads to
+stability. If parents or caregivers encouraged planning, thinking ahead, and considering the long-term implications of
+actions (e.g., &quot;What happens if we don&apos;t save money now?&quot;), this can foster a systematic, preventative mindset. Growing
+up in a household where tasks were expected to be completed meticulously, with attention to detail and a focus on
+durability (e.g., &quot;Do it right the first time, so you don&apos;t have to do it again&quot;), can instill a deep appreciation for
+robust solutions.&lt;/p&gt;
+&lt;p&gt;Negative forces can come into play as well. This could be anything from a chaotic household where things frequently went
+wrong due to lack of planning, to observing poorly organized projects in school or community activities. Experiencing
+the negative consequences of disorder can create a strong desire to build robust, resilient systems. If they frequently
+encountered systems or processes that were unreliable, broke easily, or were difficult to understand, it could foster a
+drive to design for stability and clarity.&lt;/p&gt;
+&lt;p&gt;From a personality traits, potentially innate or early-developed, perspective, individuals naturally high in conscientiousness (a Big Five personality trait) tend to be organized, disciplined,
+dutiful, and prefer planned behavior. This aligns well with the Architect&apos;s need for structure and foresight. A natural
+aversion to risk or uncertainty might lead someone to prefer designs that minimize potential failure points and
+prioritize predictability. A predisposition for breaking down problems into components, understanding interdependencies, and seeing the &quot;big picture&quot; from an early age (e.g., enjoying complex puzzles, building intricate models) can translate into architectural thinking.&lt;/p&gt;
+&lt;h4&gt;For the &quot;Hacker&quot; Mindset 💻&lt;/h4&gt;
+&lt;p&gt;The &quot;Hacker&apos;s&quot; drive for rapid iteration, immediate solutions, and direct impact often stems from experiences that reward
+&lt;strong&gt;adaptability&lt;/strong&gt;, &lt;strong&gt;quick problem-solving&lt;/strong&gt;, and &lt;strong&gt;tangible results&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This mind set usually result from the early experiences in Resource-Constrained or Fast-Paced Environments. Growing up in situations where resources were scarce, and creative, immediate solutions were necessary to overcome challenges, can foster a &quot;hack it together&quot; mentality. They learn to be resourceful and prioritize getting something working over perfect execution. Hobbies like building with LEGOs or playing video games where immediate actions lead to immediate, visible results reinforce a preference for quick iterations, rapid feedback loops and tangible progress. A childhood spent tinkering, disassembling things to see how they work, and experimenting with solutions (even if they were &quot;messy&quot;) can lead to a comfort with trial-and-error and a focus on functional outcomes.&lt;/p&gt;
+&lt;p&gt;Individuals high in openness tend to be curious, inventive, and prefer novelty. This can manifest as a desire to explore new solutions quickly and a willingness to deviate from established norms. A comfort with uncertainty and a willingness to take calculated risks (e.g., trying unconventional solutions, not needing a complete plan before starting) can drive a more experimental, pragmatic approach. A personality that prefers to jump in and start building rather than spending extensive time planning. They learn by doing and iterating. The intense satisfaction of quickly solving a problem or seeing a piece of code immediately work can be a powerful motivator, leading them to prioritize rapid implementation.&lt;/p&gt;
 </content:encoded></item><item><title>Why Do People Study Ancient Languages?</title><link>https://ai.qubitpi.org/posts/ancient-languages/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/ancient-languages/</guid><description>A fascination with things from the past, like ancient languages, is a common and deeply rooted human interest. There
 are a number of reasons for this, ranging from the intellectual and practical to the emotional and psychological.
 </description><pubDate>Sun, 03 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The discovery of a new Roman villa or the deciphering of an ancient scroll still captivates our imagination. But why do

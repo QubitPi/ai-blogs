@@ -1269,7 +1269,7 @@ significantly faster by a minor adjustment to the API, that optimization should 
 performance of a frequently executed operation over the absolute theoretical purity of the general traversal.&lt;/p&gt;
 &lt;h2&gt;The Two Conflicting Personalities behind the Two Software Design&lt;/h2&gt;
 &lt;p&gt;Different personality types can drive these software design debates as well. In the &lt;a href=&quot;#how-the-lesson-started-by-accident&quot;&gt;context of the BFS visitor pattern
-discussion&lt;/a&gt;, two conflicting personalities often emerge: the &lt;strong&gt;[Architect&lt;/strong&gt; and the
+discussion&lt;/a&gt;, two conflicting personalities often emerge: the &lt;strong&gt;Architect&lt;/strong&gt; and the
 &lt;strong&gt;Hacker&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3&gt;The Architect 🏛️&lt;/h3&gt;
 &lt;p&gt;The Architect embodies the &lt;strong&gt;Purism/Idealism&lt;/strong&gt; and &lt;em&gt;Generality&lt;/em&gt; ideologies. This personality is deeply concerned with

@@ -332,4 +332,5 @@ The "Hacker" approach directly correlates with these metrics. A quick, pragmatic
 performance gains is highly rewarded by such metrics. Returning `false` to terminate a loop immediately provides a
 clear, measurable performance improvement. Concepts like "separation of concerns," "extensibility," "maintainability,"
 "readability for future developers," or "reducing technical debt" are much harder for an AI to directly quantify and
-optimize for. They are abstract, human-centric values that _don't easily translate into numerical scores_ in the same way execution time does.
+optimize for. They are abstract, human-centric values that _don't easily translate into numerical scores_ in the same
+way execution time does.

@@ -51,8 +51,9 @@ public class Bfs {
 
 ![](./img/conversation-with-ai.png)
 
-Basically, the AI is asking me to __break the strict Visitor pattern for a performance gain__. This almost immediately
-triggered my opposition and I left my response as follows:
+Basically, the AI is asking me to __break the strict Visitor pattern for a performance gain__ by changing the return
+type of `NodeVisitor.visit(AbstractNode node)` from `void` to `boolean`. This almost immediately triggered my opposition
+and I left my response as follows:
 
 ![](./img/conversation-with-ai-2.png)
 

@@ -1,5 +1,5 @@
 ---
-title: A Lesson from AI Code Review - Learning Personal Psychology
+title: A Lesson from AI Code Review - Exploring Human Psychology
 published: 2025-08-08
 description: A code review session sparked my new approach toward working with different types of people
 image: cover.png

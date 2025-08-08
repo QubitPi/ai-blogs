@@ -1,6 +1,6 @@
 My name is Jiaqi Liu. I graduate from U of I, had internship at Fortune 500 Grainger Inc., worked at Yahoo for 4 years.
 
-:::tip[Recommendation Letter from Grainger Inc. (Fortune 500)]
+:::tip[Recommendation Letter from Grainger Inc.]
 
 ![](./recommendation.png)
 

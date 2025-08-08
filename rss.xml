@@ -1418,6 +1418,7 @@ seeing a piece of code immediately work can be a powerful motivator, leading the
 &lt;h2&gt;Why Does AI Favors Hacker Mindset?&lt;/h2&gt;
 &lt;p&gt;The fact that AI code reviewer leans towards a &quot;Hacker&quot; ideology highlights some fundamental differences between how
 humans and current AI models &quot;think&quot; about software design.&lt;/p&gt;
+&lt;h3&gt;Optimization Based on Quantifiable Metrics&lt;/h3&gt;
 &lt;p&gt;AI models, especially those for code generation or review, are often trained to optimize for &lt;strong&gt;quantifiable metrics&lt;/strong&gt;.
 These metrics are typically things like:&lt;/p&gt;
 &lt;ul&gt;
@@ -1432,6 +1433,7 @@ clear, measurable performance improvement. Concepts like &quot;separation of con
 &quot;readability for future developers,&quot; or &quot;reducing technical debt&quot; are much harder for an AI to directly quantify and
 optimize for. They are abstract, human-centric values that &lt;em&gt;don&apos;t easily translate into numerical scores&lt;/em&gt; in the same
 way execution time does.&lt;/p&gt;
+&lt;p&gt;Large language models are trained on vast datasets of code from repositories like GitHub, Stack Overflow, and competitive programming platforms.&lt;/p&gt;
 </content:encoded></item><item><title>Why Do People Study Ancient Languages?</title><link>https://ai.qubitpi.org/posts/ancient-languages/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/ancient-languages/</guid><description>A fascination with things from the past, like ancient languages, is a common and deeply rooted human interest. There
 are a number of reasons for this, ranging from the intellectual and practical to the emotional and psychological.
 </description><pubDate>Sun, 03 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The discovery of a new Roman villa or the deciphering of an ancient scroll still captivates our imagination. But why do

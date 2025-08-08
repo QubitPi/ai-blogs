@@ -8,7 +8,41 @@ category: English
 draft: false
 ---
 
-![](img/conversation-with-ai.png)
+https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188
+
+The code in question is the follows
+
+:::note
+
+The irrelevant codes, such as Javadoc, `import`s, null-checks, etc., have been removed to reduce the distractions
+
+:::
+
+```java
+public interface NodeVisitor {
+
+    void visit(AbstractNode node);
+}
+
+public class Bfs {
+    
+    public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
+        final Deque<AbstractNode> queue = new ArrayDeque<>(Collections.singleton(startNode));
+        final Set<String> visited = new HashSet<>(Collections.singleton(startNode.getLabel()));
+
+        while (!queue.isEmpty()) {
+            final AbstractNode currentNode = queue.removeFirst();
+            currentNode.accept(visitor);
+            for (final AbstractNode neighbor : currentNode.getNeighbors()) {
+                if (!visited.contains(neighbor.getLabel())) {
+                    visited.add(neighbor.getLabel());
+                    queue.addLast(neighbor);
+                }
+            }
+        }
+    }
+}
+```
 
 The Two Conflicting Personalities behind the Two Software Design
 ----------------------------------------------------------------

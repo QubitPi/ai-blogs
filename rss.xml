@@ -1207,8 +1207,9 @@ for review:&lt;/p&gt;
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&quot;./img/conversation-with-ai.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Basically, the AI is asking me to &lt;strong&gt;break the strict Visitor pattern for a performance gain&lt;/strong&gt;. This almost immediately
-triggered my opposition and I left my response as follows:&lt;/p&gt;
+&lt;p&gt;Basically, the AI is asking me to &lt;strong&gt;break the strict Visitor pattern for a performance gain&lt;/strong&gt; by changing the return
+type of &lt;code&gt;NodeVisitor.visit(AbstractNode node)&lt;/code&gt; from &lt;code&gt;void&lt;/code&gt; to &lt;code&gt;boolean&lt;/code&gt;. This almost immediately triggered my opposition
+and I left my response as follows:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;./img/conversation-with-ai-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;The Two Conflicting Personalities behind the Two Software Design&lt;/h2&gt;
 &lt;p&gt;Different personality types can drive these software design debates. In the context of the BFS visitor pattern discussion, two conflicting personalities often emerge: the Architect and the Hacker.&lt;/p&gt;

@@ -1177,7 +1177,7 @@ one with the highest estimated value, i.e. a greedy action:&lt;/p&gt;
 &lt;p&gt;It was a regular AI review session in
 &lt;a href=&quot;https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188&quot;&gt;a pull request&lt;/a&gt; on one of my projects. Little
 background - I was implementing a general BFS (Breadth-First Search) algorithm which can be whipped as a JAR library into one of my developing Java webservices to solve various business problems. To boost its generality, I decided to implement it
-using the &lt;a href=&quot;https://refactoring.guru/design-patterns/visitor&quot;&gt;Visitor pattern&lt;/a&gt; and the code below shows the simplified
+using the &lt;a href=&quot;https://refactoring.guru/design-patterns/visitor&quot;&gt;Visitor pattern&lt;/a&gt; and the code below shows the &lt;em&gt;simplified&lt;/em&gt;
 version of my first draft sent to &lt;a href=&quot;https://developers.google.com/gemini-code-assist/docs/review-github-code&quot;&gt;gemini-code-assist&lt;/a&gt;
 for review:&lt;/p&gt;
 &lt;p&gt;:::tip&lt;/p&gt;

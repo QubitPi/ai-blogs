@@ -44,7 +44,7 @@ public abstract class AbstractNode {
 }
 ```
 
-```java title="General BFS implementation" {"AI Review: ⚠️ No early return for large graph dataset":4}
+```java title="General BFS implementation" {"AI Review: ⚠️ No early return for large graph dataset":4-13}
 public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
     final Deque<AbstractNode> queue = new ArrayDeque<>(Collections.singleton(startNode));
     final Set<String> visited = new HashSet<>(Collections.singleton(startNode.getLabel()));
@@ -137,6 +137,10 @@ The Two Conflicting Personalities behind the Two Software Design
 Different personality types can drive these software design debates as well. In the [context of the BFS visitor pattern
 discussion](#how-the-lesson-started-by-accident), two conflicting personalities often emerge: the __Architect__ and the
 __Hacker__.
+
+### The Architect 🏛️
+
+
 
 What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?
 -------------------------------------------------------------------------------------------------------------

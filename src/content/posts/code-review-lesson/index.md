@@ -166,6 +166,12 @@ patterns and principles.
 
 ### The Hacker 💻
 
+The Hacker (in the positive sense of a clever problem-solver, not a malicious one) embodies the __Pragmatism__ and
+_specific optimization_ ideologies. They are driven by getting things done efficiently and solving immediate,
+high-impact problems
+
+While they appreciate patterns, they are willing to bend or adapt them if it leads to a clear and measurable performance gain, especially for common use cases.
+
 :::tip[Core motivations of Hacker]
 
 - speed

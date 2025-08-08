@@ -153,7 +153,7 @@ or limiting future extensibility. Architects argue that for most graphs, the ove
 iterations after a target is found is negligible, and for truly massive graphs, a __long-term view__ of more fundamental
 architectural changes might be needed anyway. They prioritize __correctness over convenience__
 
-:::tip[Core motivation of Architect]
+:::tip[Core motivations of Architect]
 
 - elegance
 - correctness
@@ -166,7 +166,11 @@ patterns and principles.
 
 :::
 
+### The Hacker 💻
 
+:::tip[Core motivations of Hacker]
+
+:::
 
 
 

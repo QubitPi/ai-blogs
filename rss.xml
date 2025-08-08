@@ -1179,8 +1179,9 @@ one with the highest estimated value, i.e. a greedy action:&lt;/p&gt;
 background - I was implementing a general BFS (Breadth-First Search) algorithm which can be whipped as a JAR library
 into one of my developing Java webservices to solve various business problems. To boost its generality, I decided to
 implement it using the &lt;a href=&quot;https://refactoring.guru/design-patterns/visitor&quot;&gt;Visitor pattern&lt;/a&gt;, which by design is able to
-separate the fixed algorithm and variable business logic. The code below shows the &lt;em&gt;simplified&lt;/em&gt; version of my first
-draft sent to &lt;a href=&quot;https://developers.google.com/gemini-code-assist/docs/review-github-code&quot;&gt;gemini-code-assist&lt;/a&gt; for review:&lt;/p&gt;
+separate the fixed algorithm and variable business logic and, therefore, make the algorithm applicable to general use
+cases. The code below shows the &lt;em&gt;simplified&lt;/em&gt; version of my first draft sent to
+&lt;a href=&quot;https://developers.google.com/gemini-code-assist/docs/review-github-code&quot;&gt;gemini-code-assist&lt;/a&gt; for review:&lt;/p&gt;
 &lt;p&gt;:::tip&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The irrelevant codes, such as Javadoc, &lt;code&gt;import&lt;/code&gt;s, null-checks, etc., have been removed to highlight the essentials&lt;/li&gt;
@@ -1224,7 +1225,7 @@ the early termination of the loop with the following review comments:&lt;/p&gt;
 type of &lt;code&gt;NodeVisitor.visit(AbstractNode node)&lt;/code&gt; from &lt;code&gt;void&lt;/code&gt; to &lt;code&gt;boolean&lt;/code&gt;. This almost immediately triggered my opposition
 and I left my response as follows:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;./img/conversation-with-ai-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;My response focuses on telling AI returning &lt;code&gt;boolean&lt;/code&gt; in this case was &lt;strong&gt;not a standard&lt;/strong&gt; Visitor practice. The AI,
+&lt;p&gt;My response focused on telling AI returning &lt;code&gt;boolean&lt;/code&gt; in this case was &lt;strong&gt;not a standard&lt;/strong&gt; Visitor practice. The AI,
 however, is resisting with the following followup:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;./img/conversation-with-ai-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Man what a thoughtful challenge... What&apos;s interesting though is I started to feel a common tension in software design:

@@ -1173,8 +1173,12 @@ one with the highest estimated value, i.e. a greedy action:&lt;/p&gt;
 &lt;p&gt;$$&lt;/p&gt;
 &lt;p&gt;A_t = \argmax_a Q_t(a)&lt;/p&gt;
 &lt;p&gt;$$&lt;/p&gt;
-</content:encoded></item><item><title>A Lession From AI Code Review</title><link>https://ai.qubitpi.org/posts/code-review-lesson/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/code-review-lesson/</guid><description>A code review session sparked my new approach toward working with different types of people</description><pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188&lt;/p&gt;
-&lt;p&gt;The code in question is the follows&lt;/p&gt;
+</content:encoded></item><item><title>A Lesson From AI Code Review</title><link>https://ai.qubitpi.org/posts/code-review-lesson/</link><guid isPermaLink="true">https://ai.qubitpi.org/posts/code-review-lesson/</guid><description>A code review session sparked my new approach toward working with different types of people</description><pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;It was a regular AI review session in
+&lt;a href=&quot;https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188&quot;&gt;a pull request&lt;/a&gt; on one of my projects. Little
+background - I was implementing a general BFS (Breadth-First Search) algorithm which can be whipped as a JAR library into one of my developing Java webservices to solve various business problems. To boost its generality, I decided to implement it
+using the &lt;a href=&quot;https://refactoring.guru/design-patterns/visitor&quot;&gt;Visitor pattern&lt;/a&gt; and the code below shows the simplified
+version of my first draft sent to &lt;a href=&quot;https://developers.google.com/gemini-code-assist/docs/review-github-code&quot;&gt;gemini-code-assist&lt;/a&gt;
+for review:&lt;/p&gt;
 &lt;p&gt;:::note&lt;/p&gt;
 &lt;p&gt;The irrelevant codes, such as Javadoc, &lt;code&gt;import&lt;/code&gt;s, null-checks, etc., have been removed to reduce the distractions&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
@@ -1202,6 +1206,10 @@ public class Bfs {
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;./img/conversation-with-ai.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Basically, the AI is asking me to &lt;strong&gt;break the strict Visitor pattern for a performance gain&lt;/strong&gt;. This almost immediately
+triggered my opposition and I left my response as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./img/conversation-with-ai-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;The Two Conflicting Personalities behind the Two Software Design&lt;/h2&gt;
 &lt;p&gt;Different personality types can drive these software design debates. In the context of the BFS visitor pattern discussion, two conflicting personalities often emerge: the Architect and the Hacker.&lt;/p&gt;
 &lt;h2&gt;What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?&lt;/h2&gt;

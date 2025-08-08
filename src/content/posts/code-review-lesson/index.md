@@ -1,5 +1,5 @@
 ---
-title: A Lesson From AI Code Review
+title: A Lesson from AI Code Review - Learning Personal Psychology
 published: 2025-08-08
 description: A code review session sparked my new approach toward working with different types of people
 image: cover.png
@@ -7,6 +7,9 @@ tags: [Technology, Psychology]
 category: English
 draft: false
 ---
+
+How the Lesson Started, By Accident
+-----------------------------------
 
 It was a regular AI review session in
 [a pull request](https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188) on one of my projects. Little

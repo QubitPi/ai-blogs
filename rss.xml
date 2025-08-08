@@ -1296,6 +1296,10 @@ architectural changes might be needed anyway. They prioritize &lt;strong&gt;corr
 patterns and principles.&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
 &lt;h3&gt;The Hacker 💻&lt;/h3&gt;
+&lt;p&gt;The Hacker (in the positive sense of a clever problem-solver, not a malicious one) embodies the &lt;strong&gt;Pragmatism&lt;/strong&gt; and
+&lt;em&gt;specific optimization&lt;/em&gt; ideologies. They are driven by getting things done efficiently and solving immediate,
+high-impact problems&lt;/p&gt;
+&lt;p&gt;While they appreciate patterns, they are willing to bend or adapt them if it leads to a clear and measurable performance gain, especially for common use cases.&lt;/p&gt;
 &lt;p&gt;:::tip[Core motivations of Hacker]&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;speed&lt;/li&gt;

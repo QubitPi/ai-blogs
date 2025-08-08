@@ -408,3 +408,8 @@ philosophical conflict between __Determinism__ and __Libertarianism__ regarding 
   the universe, particularly regarding human consciousness or decision-making.
 
 :::
+
+Current AI models, including large language models, are fundamentally deterministic. Their "decisions" and outputs are
+the result of complex algorithms, statistical probabilities learned from vast datasets, and intricate mathematical
+computations. Given the exact same input and internal state, an AI will, in principle, produce the exact same output.
+There's no "magic" or uncaused choice; it's a consequence of its programming and training data

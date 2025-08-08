@@ -374,6 +374,8 @@ __creatively__ and contextually in code generation is still a frontier.
 
 - __Contemporary AI does NOT know how to feel__, a complex human capability rooted in our psychological
   subconsciousness.
-- Works involving creative abstract reasoning are less likely to be taken over by contemporary AI
+- Works involving creative abstract reasoning are less likely to be taken over by contemporary AI, which lacks the
+  holistic, long-term, and human-centric perspective that an Architect brings to software design. This is precisely why
+  human oversight and architectural guidance _remain_ crucial in software development.
 
 :::

@@ -253,7 +253,7 @@ is found is clearly inefficient. The argument is that if a common and critical u
 significantly faster by a minor adjustment to the API, that optimization should be considered. This prioritizes the
 performance of a frequently executed operation over the absolute theoretical purity of the general traversal.</p></section>
 <section><h2 id="the-two-conflicting-personalities-behind-the-two-software-design">The Two Conflicting Personalities behind the Two Software Design<a class="anchor" href="#the-two-conflicting-personalities-behind-the-two-software-design"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h2><p>Different personality types can drive these software design debates as well. In the <a href="#how-the-lesson-started-by-accident">context of the BFS visitor pattern
-discussion</a>, two conflicting personalities often emerge: the <strong>Architect</strong> and the
+discussion</a>, two conflicting personalities often emerge: the <strong>[Architect</strong> and the
 <strong>Hacker</strong>.</p><section><h3 id="the-architect-️">The Architect 🏛️<a class="anchor" href="#the-architect-️"><span class="anchor-icon" data-pagefind-ignore="">#</span></a></h3><p>The Architect embodies the <strong>Purism/Idealism</strong> and <em>Generality</em> ideologies. This personality is deeply concerned with
 the long-term health, scalability, and maintainability of the codebase.</p><p>For the Architect, the Visitor pattern’s strength lies in its clear <em>separation of concerns</em>. The <code>visit</code> method should
 only perform an operation on the element, not control the traversal. Deviating from this feels like a compromise of

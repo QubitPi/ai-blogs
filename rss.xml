@@ -1278,7 +1278,13 @@ the long-term health, scalability, and maintainability of the codebase.&lt;/p&gt
 &lt;p&gt;For the Architect, the Visitor pattern&apos;s strength lies in its clear &lt;em&gt;separation of concerns&lt;/em&gt;. The &lt;code&gt;visit&lt;/code&gt; method should
 only perform an operation on the element, not control the traversal. Deviating from this feels like a compromise of
 the pattern&apos;s integrity. Architects practices &lt;strong&gt;strict adherence to patterns&lt;/strong&gt;. They design the BFS algorithm to be a
-truly general-purpose traversal mechanism, capable of being used for any scenario where we need to visit every reachable node. Optimizing for a single &quot;search&quot; use case by baking termination logic into the &lt;code&gt;visit&lt;/code&gt; method feels like specializing a general tool.&lt;/p&gt;
+truly &lt;strong&gt;general-purpose&lt;/strong&gt; traversal mechanism, capable of being used for any scenario where we need to visit every
+reachable node. Optimizing for a single &quot;search&quot; use case by baking termination logic into the &lt;code&gt;visit&lt;/code&gt; method feels like
+specializing a general tool.&lt;/p&gt;
+&lt;p&gt;Performance optimizations are important, but not at the expense of muddying the design, making it harder to understand,
+or limiting future extensibility. Architects argue that for most graphs, the overhead of continuing a few extra
+iterations after a target is found is negligible, and for truly massive graphs, a &lt;strong&gt;long-term view&lt;/strong&gt; of more fundamental
+architectural changes might be needed anyway. They prioritize &lt;strong&gt;correctness over convenience&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;:::tip[Core motivation of Architect]&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;elegance&lt;/li&gt;

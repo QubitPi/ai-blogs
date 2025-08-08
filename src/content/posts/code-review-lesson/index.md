@@ -18,9 +18,11 @@ using the [Visitor pattern](https://refactoring.guru/design-patterns/visitor) an
 version of my first draft sent to [gemini-code-assist](https://developers.google.com/gemini-code-assist/docs/review-github-code)
 for review:
 
-:::note
+:::tip
 
-The irrelevant codes, such as Javadoc, `import`s, null-checks, etc., have been removed to reduce the distractions
+- The irrelevant codes, such as Javadoc, `import`s, null-checks, etc., have been removed to reduce the distractions
+- The complete code and the conversation between AI and me can be found it the
+  [original pull request](https://github.com/QubitPi/gearbox/pull/23)
 
 :::
 

@@ -37,7 +37,7 @@ public interface NodeVisitor {
 
 ```java title="AbstractNode" "void"
 public abstract class AbstractNode {
-    
+
     void accept(final NodeVisitor visitor) {
         visitor.visit(this);
     }

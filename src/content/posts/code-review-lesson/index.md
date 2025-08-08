@@ -60,8 +60,8 @@ public static void traverse(final AbstractNode startNode, final NodeVisitor visi
 }
 ```
 
-Having analyzed the code above, the Gemini AI review found a performance issue and argued that if we are applying
-`traverse` method to a large dataset, the `while` loop above could take a lot of time. So the AI figured out a way for
+Having analyzed the code above, the Gemini AI review found a performance issue and argued that if `traverse` method is
+applied to a large dataset, the `while` loop above could take a lot of time. So the AI figured out a way for
 the early termination of the loop with the following review comments:
 
 ![](./img/conversation-with-ai.png)
@@ -72,7 +72,15 @@ and I left my response as follows:
 
 ![](./img/conversation-with-ai-2.png)
 
-The AI is resisting with the following followup:
+My response focuses on telling AI returning `boolean` in this case was __not a standard__ Visitor practice. The AI,
+however, is resisting with the following followup:
+
+![](./img/conversation-with-ai-2.png)
+
+Man what a thoughtful challenge... What's interesting though is I started to feel a common tension in software design:
+balancing __strict adherence to a pattern's principles__ with __real-world performance needs__. I keep defending my current design choice:
+
+
 
 
 

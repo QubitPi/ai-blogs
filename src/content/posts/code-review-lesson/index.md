@@ -31,6 +31,15 @@ public interface NodeVisitor {
 }
 ```
 
+```java title="AbstractNode" "void"
+public abstract class AbstractNode {
+    
+    void accept(final NodeVisitor visitor) {
+        visitor.visit(this);
+    }
+}
+```
+
 ```java title="General BFS implementation"
 public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
     final Deque<AbstractNode> queue = new ArrayDeque<>(Collections.singleton(startNode));

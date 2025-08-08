@@ -170,8 +170,10 @@ The Hacker (in the positive sense of a clever problem-solver, not a malicious on
 _specific optimization_ ideologies. They are driven by getting things done efficiently and solving immediate,
 high-impact problems
 
-While they appreciate patterns, they honor __"Get it done" mentality__ and are willing to bend or adapt them if it leads to a clear and measurable performance
-gain, especially for common use cases.
+While they appreciate patterns, they honor __"Get it done" mentality__ and are willing to bend or adapt them if it leads
+to a clear and measurable performance gain, especially for common use cases. If a search operation is a critical
+bottleneck for large graphs, they put __performance first__ and see the continued traversal after finding the target as
+a waste of resources. A `boolean` return that allows the traversal to immediately stop is a direct and effective solution to this problem. Hackers are more focused on the __short-term impact__ of the immediate, measurable benefits of an optimization. The "slight deviation" from pattern purity is a small price to pay for a "significant performance improvement." They prioritize __convenience over correctness__
 
 :::tip[Core motivations of Hacker]
 

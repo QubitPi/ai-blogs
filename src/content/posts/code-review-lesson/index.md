@@ -99,7 +99,7 @@ The debate over the `void` versus `boolean` return type for a `visit` method in 
 particularly concerning early termination, actually stems from two conflicting philosophical or psychological ideologies
 in software design:
 
-### 1: Purism (or Idealism) vs. Pragmatism
+### Purism (or Idealism) vs. Pragmatism
 
 __Idealism__ champions strict adherence to design patterns and principles (like the _Single Responsibility Principle_
 and _Command-Query Separation_). From a purist perspective, the _Visitor_'s sole responsibility is to perform an

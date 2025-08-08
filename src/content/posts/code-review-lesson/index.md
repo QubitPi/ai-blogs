@@ -42,7 +42,7 @@ public abstract class AbstractNode {
 }
 ```
 
-```java title="General BFS implementation" {"AI Review: No early return for large graph dataset":4}
+```java title="General BFS implementation" {"AI Review: ⚠️ No early return for large graph dataset":4}
 public static void traverse(final AbstractNode startNode, final NodeVisitor visitor) {
     final Deque<AbstractNode> queue = new ArrayDeque<>(Collections.singleton(startNode));
     final Set<String> visited = new HashSet<>(Collections.singleton(startNode.getLabel()));

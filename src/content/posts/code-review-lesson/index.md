@@ -144,7 +144,14 @@ the long-term health, scalability, and maintainability of the codebase.
 For the Architect, the Visitor pattern's strength lies in its clear _separation of concerns_. The `visit` method should
 only perform an operation on the element, not control the traversal. Deviating from this feels like a compromise of
 the pattern's integrity. Architects practices __strict adherence to patterns__. They design the BFS algorithm to be a
-truly general-purpose traversal mechanism, capable of being used for any scenario where we need to visit every reachable node. Optimizing for a single "search" use case by baking termination logic into the `visit` method feels like specializing a general tool.
+truly __general-purpose__ traversal mechanism, capable of being used for any scenario where we need to visit every
+reachable node. Optimizing for a single "search" use case by baking termination logic into the `visit` method feels like
+specializing a general tool.
+
+Performance optimizations are important, but not at the expense of muddying the design, making it harder to understand,
+or limiting future extensibility. Architects argue that for most graphs, the overhead of continuing a few extra
+iterations after a target is found is negligible, and for truly massive graphs, a __long-term view__ of more fundamental
+architectural changes might be needed anyway. They prioritize __correctness over convenience__
 
 :::tip[Core motivation of Architect]
 

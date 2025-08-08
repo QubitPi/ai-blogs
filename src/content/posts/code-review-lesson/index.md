@@ -169,6 +169,8 @@ patterns and principles.
 
 
 
+
+
 What Different Past Personal Experiences Could Lead to Such a Diverted World-View like Architect v.s. Hacker?
 -------------------------------------------------------------------------------------------------------------
 

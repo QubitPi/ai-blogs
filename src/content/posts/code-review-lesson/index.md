@@ -14,7 +14,7 @@ How the Lesson Started, By Accident
 It was a regular AI review session in
 [a pull request](https://github.com/QubitPi/gearbox/pull/23#discussion_r2260539188) on one of my projects. Little
 background - I was implementing a general BFS (Breadth-First Search) algorithm which can be whipped as a JAR library into one of my developing Java webservices to solve various business problems. To boost its generality, I decided to implement it
-using the [Visitor pattern](https://refactoring.guru/design-patterns/visitor) and the code below shows the simplified
+using the [Visitor pattern](https://refactoring.guru/design-patterns/visitor) and the code below shows the _simplified_
 version of my first draft sent to [gemini-code-assist](https://developers.google.com/gemini-code-assist/docs/review-github-code)
 for review:
 
